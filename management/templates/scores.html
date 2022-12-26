@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Scores{% endblock title %}
+
+{% block content %}
+<div class="row">
+    <div clas="col col-8" style="max-width:800px; margin:20px 40px 60px 40px">
+        <table id="user-table" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>User</th>
+                    <th>User Id</th>
+                    <th>Score A</th>
+                    <th>Score B</th>
+                    <th>Score C</th>
+                    <th></th>
+                </tr>        
+            </thead>
+            <tbody>
+                {% for score in scores %} 
+                <tr>
+                    <td>{{ score.id }}</td>
+                    <td>{{ score.user.first_name }} {{ score.user.last_name }}</td>
+                    <td>{{ score.user.id }}</td>
+                    <td>{{ score.score_a }}</td>
+                    <td>{{ score.score_b }}</td>
+                    <td>{{ score.score_c }}</td>
+                    <td style="padding-top:4px; padding-bottom:4px">
+                        <a class="btn btn-sm pt-0 pb-0" style="height:20px" href="{{ score.id }}">Edit</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}
+
+
+{% block script %}
+<script>
+$(document).ready(function () {
+    var t = $('#user-table').DataTable({
+        paging: false,
+        columnDefs: [
+            {
+                width: "0%",
+                targets: 0,
+            },
+            {
+                searchable: false,
+                orderable: false,
+                targets: 6,
+            },
+        ],
+        order: [[0, 'asc']],
+    });
+
+});
+</script>
+{% endblock script %}

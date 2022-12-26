@@ -1,0 +1,17 @@
+{% extends 'base_no_login.html' %}
+
+{% block content %}
+<div class="p-5" style="text-align:center; width:100%">
+  <center>
+    <div class="p-5" style="width:400px;border-width: 1px;border-style:solid;border-color: rgb(209 199 199);">
+      <h3 class="pb-3">Log In</h3>
+      <form action='/login/' method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="hidden" name="next" value="/admin/dashboard"/>
+        <button class="btn btn-primary" type="submit">Log In</button>
+      </form>
+    </div>
+  </center>
+</div>
+{% endblock content %}

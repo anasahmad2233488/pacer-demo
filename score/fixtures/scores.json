@@ -1,0 +1,533 @@
+[
+      {
+    "model": "score.score",
+    "pk": 1,
+    "fields": {
+      "user_id": 4,
+      "score_a": 0,
+      "score_b": 4,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 2,
+    "fields": {
+      "user_id": 5,
+      "score_a": 2,
+      "score_b": 3,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 3,
+    "fields": {
+      "user_id": 6,
+      "score_a": 3,
+      "score_b": 5,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 4,
+    "fields": {
+      "user_id": 7,
+      "score_a": 2,
+      "score_b": 1,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 5,
+    "fields": {
+      "user_id": 8,
+      "score_a": 5,
+      "score_b": 4,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 6,
+    "fields": {
+      "user_id": 11,
+      "score_a": 4,
+      "score_b": 4,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 7,
+    "fields": {
+      "user_id": 12,
+      "score_a": 4,
+      "score_b": 3,
+      "score_c": 2
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 8,
+    "fields": {
+      "user_id": 16,
+      "score_a": 2,
+      "score_b": 5,
+      "score_c": 3
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 9,
+    "fields": {
+      "user_id": 21,
+      "score_a": 4,
+      "score_b": 3,
+      "score_c": 2
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 10,
+    "fields": {
+      "user_id": 26,
+      "score_a": 2,
+      "score_b": 4,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 11,
+    "fields": {
+      "user_id": 28,
+      "score_a": 3,
+      "score_b": 2,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 12,
+    "fields": {
+      "user_id": 29,
+      "score_a": 3,
+      "score_b": 1,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 13,
+    "fields": {
+      "user_id": 30,
+      "score_a": 4,
+      "score_b": 0,
+      "score_c": 3
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 14,
+    "fields": {
+      "user_id": 31,
+      "score_a": 0,
+      "score_b": 5,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 15,
+    "fields": {
+      "user_id": 32,
+      "score_a": 5,
+      "score_b": 1,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 16,
+    "fields": {
+      "user_id": 33,
+      "score_a": 2,
+      "score_b": 5,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 17,
+    "fields": {
+      "user_id": 37,
+      "score_a": 1,
+      "score_b": 4,
+      "score_c": 3
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 18,
+    "fields": {
+      "user_id": 40,
+      "score_a": 0,
+      "score_b": 0,
+      "score_c": 3
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 19,
+    "fields": {
+      "user_id": 41,
+      "score_a": 5,
+      "score_b": 5,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 20,
+    "fields": {
+      "user_id": 42,
+      "score_a": 5,
+      "score_b": 2,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 21,
+    "fields": {
+      "user_id": 44,
+      "score_a": 1,
+      "score_b": 3,
+      "score_c": 3
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 22,
+    "fields": {
+      "user_id": 49,
+      "score_a": 0,
+      "score_b": 5,
+      "score_c": 2
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 23,
+    "fields": {
+      "user_id": 50,
+      "score_a": 4,
+      "score_b": 4,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 24,
+    "fields": {
+      "user_id": 51,
+      "score_a": 1,
+      "score_b": 5,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 25,
+    "fields": {
+      "user_id": 53,
+      "score_a": 5,
+      "score_b": 0,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 26,
+    "fields": {
+      "user_id": 56,
+      "score_a": 5,
+      "score_b": 5,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 27,
+    "fields": {
+      "user_id": 58,
+      "score_a": 0,
+      "score_b": 5,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 28,
+    "fields": {
+      "user_id": 59,
+      "score_a": 3,
+      "score_b": 3,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 29,
+    "fields": {
+      "user_id": 60,
+      "score_a": 4,
+      "score_b": 1,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 30,
+    "fields": {
+      "user_id": 61,
+      "score_a": 4,
+      "score_b": 3,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 31,
+    "fields": {
+      "user_id": 64,
+      "score_a": 3,
+      "score_b": 5,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 32,
+    "fields": {
+      "user_id": 69,
+      "score_a": 1,
+      "score_b": 0,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 33,
+    "fields": {
+      "user_id": 70,
+      "score_a": 1,
+      "score_b": 1,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 34,
+    "fields": {
+      "user_id": 72,
+      "score_a": 0,
+      "score_b": 2,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 35,
+    "fields": {
+      "user_id": 73,
+      "score_a": 2,
+      "score_b": 4,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 36,
+    "fields": {
+      "user_id": 74,
+      "score_a": 5,
+      "score_b": 4,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 37,
+    "fields": {
+      "user_id": 75,
+      "score_a": 4,
+      "score_b": 4,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 38,
+    "fields": {
+      "user_id": 76,
+      "score_a": 2,
+      "score_b": 4,
+      "score_c": 5
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 39,
+    "fields": {
+      "user_id": 78,
+      "score_a": 1,
+      "score_b": 4,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 40,
+    "fields": {
+      "user_id": 79,
+      "score_a": 3,
+      "score_b": 0,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 41,
+    "fields": {
+      "user_id": 82,
+      "score_a": 4,
+      "score_b": 3,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 42,
+    "fields": {
+      "user_id": 84,
+      "score_a": 4,
+      "score_b": 0,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 43,
+    "fields": {
+      "user_id": 86,
+      "score_a": 1,
+      "score_b": 2,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 44,
+    "fields": {
+      "user_id": 87,
+      "score_a": 0,
+      "score_b": 3,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 45,
+    "fields": {
+      "user_id": 89,
+      "score_a": 3,
+      "score_b": 2,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 46,
+    "fields": {
+      "user_id": 90,
+      "score_a": 2,
+      "score_b": 3,
+      "score_c": 3
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 47,
+    "fields": {
+      "user_id": 92,
+      "score_a": 2,
+      "score_b": 3,
+      "score_c": 3
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 48,
+    "fields": {
+      "user_id": 95,
+      "score_a": 3,
+      "score_b": 0,
+      "score_c": 4
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 49,
+    "fields": {
+      "user_id": 96,
+      "score_a": 5,
+      "score_b": 2,
+      "score_c": 1
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 50,
+    "fields": {
+      "user_id": 97,
+      "score_a": 5,
+      "score_b": 5,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 51,
+    "fields": {
+      "user_id": 98,
+      "score_a": 1,
+      "score_b": 4,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 52,
+    "fields": {
+      "user_id": 100,
+      "score_a": 4,
+      "score_b": 3,
+      "score_c": 0
+    }
+  },
+    {
+    "model": "score.score",
+    "pk": 53,
+    "fields": {
+      "user_id": 101,
+      "score_a": 2,
+      "score_b": 3,
+      "score_c": 1
+    }
+  }
+
+  ]

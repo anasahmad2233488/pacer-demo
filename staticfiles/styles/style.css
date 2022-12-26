@@ -1,0 +1,19 @@
+.navbar{
+    background-color: rgb(217, 185, 217) !important;
+}
+
+nav .btn:hover{
+    background-color: rgb(199 154 199);
+}
+
+tr td a {
+    display: none !important; /* On :hover of div show button */
+}
+
+tr:hover td a {
+    display: block !important; /* On :hover of div show button */
+}
+
+table{
+    font-size: 14px;
+}

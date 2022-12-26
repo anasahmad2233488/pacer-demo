@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block title %}Users{% endblock title %}
+
+{% block content %}
+
+<div class="row">
+    <div clas="col col-8" style="max-width:800px; margin:60px 40px 0px 40px">
+        <form id='user-update-form' method="post">
+            {% csrf_token %}
+            <div class="container pt-4 pb-4" style="border-style: solid; border-width:1px; border-color: rgb(199, 199, 199);">
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="id">Id</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        {{user.id}}
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="username">Username</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input name="username" value="{{user.username}}"/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="first_name">First Name</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input name="first_name" value="{{user.first_name}}"/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="last_name">Last Name</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input name="last_name" value="{{user.last_name}}"/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="email">email</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input name="email" value="{{user.email}}"/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="is_staff">is_staff</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input type="checkbox" name="is_staff" {% if user.is_staff %}checked{% endif %}/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="is_active">is_active</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input type="checkbox" name="is_active" {% if user.is_active %}checked{% endif %}/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="is_superuser">is_superuser</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input type="checkbox" name="is_superuser" {% if user.is_superuser %}checked{% endif %}/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="date_joined">Date Joined</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        {{ user.date_joined}}
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">            
+                        <button id="submit-button" type='button' class="btn btn-sm btn-primary btn-block">Update</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="update-user-modal" tabindex="-1" role="dialog" aria-labelledby="update" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+          <center>Updating User</center>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script>
+    $("#submit-button").click(function() {
+        $('#update-user-modal').modal('show');
+        setTimeout(() => {  
+            $( "#user-update-form" ).submit();
+        }, 1000);            
+    });
+
+</script>
+
+{% endblock script %}

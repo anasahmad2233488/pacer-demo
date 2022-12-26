@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Score{% endblock title %}
+
+{% block content %}
+
+<div class="row">
+    <div clas="col col-8" style="max-width:800px; margin:60px 40px 0px 40px">
+        <form id='user-update-form' method="post">
+            {% csrf_token %}
+            <div class="container pt-4 pb-4" style="border-style: solid; border-width:1px; border-color: rgb(199, 199, 199);">
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="id">Id</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        {{score.id}}
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="user">User</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        {{score.user.first_name}} {{score.user.last_name}}
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="user_id">User Id</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        {{score.user.id}}
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="score_a">Score A</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input name="score_a" value="{{score.score_a}}"/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="score_b">Score B</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input name="score_b" value="{{score.score_b}}"/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">
+                        <label name="score_c">Score C</label>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <input name="score_c" value="{{score.score_c}}"/>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-sm-12 col-md-2">            
+                        <button id="submit-button" type='button' class="btn btn-sm btn-primary btn-block">Update</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="update-user-modal" tabindex="-1" role="dialog" aria-labelledby="update" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+          <center>Updating Score</center>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script>
+    $("#submit-button").click(function() {
+        $('#update-user-modal').modal('show');
+        setTimeout(() => {  
+            $( "#user-update-form" ).submit();
+        }, 1000);            
+    });
+
+</script>
+
+{% endblock script %}
