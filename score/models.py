@@ -6,3 +6,4 @@ class Score(models.Model):
     score_a = models.IntegerField()
     score_b = models.IntegerField()
     score_c = models.IntegerField()
+    score_d = models.IntegerField()

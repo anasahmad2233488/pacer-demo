@@ -10,7 +10,7 @@ class GetScoreTestCase(TestCase):
         self.client = APIClient()
         self.user = User(first_name='Test', last_name='User', username='test_user')
         self.user.save()
-        self.score = Score(score_a=1, score_b=2, score_c=3, user=self.user)
+        self.score = Score(score_a=1, score_b=2, score_c=3, score_d=4, user=self.user)
         self.score.save()
         self.score_pk = self.score.id
 
